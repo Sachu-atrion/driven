@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST - Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline backup styles in case CSS doesn't load */
+        .test-status {
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #000;
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-status">
+        <h1>CSS LOADING TEST</h1>
+        <p>If this text is blue and styled, CSS is working: <span style="color: var(--primary-color); font-weight: bold;">TEST TEXT</span></p>
+        <button class="btn btn-primary">Test Button</button>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 style="text-align: center; margin: 40px 0;">CONTACT FORM BELOW</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xjggkqlr" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h3>Email</h3>
+                        <p>hello@drivenagency.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple test to check if JS loads
+        console.log('✅ JavaScript is working!');
+        alert('If you see this alert, JavaScript is loaded correctly!');
+    </script>
+</body>
+</html>
